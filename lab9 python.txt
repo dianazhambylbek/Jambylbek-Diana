@@ -1,0 +1,39 @@
+# Task 1
+# There is a list a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89].
+# Print all the elements that are less than 5
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+result = []
+for num in a:  # Using 'num' instead of 'element'
+    if num < 5:
+        result.append(num)
+
+print(result)
+
+#Task 2
+#The lists are given:
+#a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
+#b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].
+#You need to return a list that consists of elements that are common to these two lists.
+
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+
+common_elements = []
+for num in a:
+    if num in b and num not in common_elements:
+        common_elements.append(num)
+
+print(common_elements)
+
+#Task 3
+import operator
+d = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
+print('Original dictionary : ', d)
+
+sorted_d = sorted(d.items(), key=operator.itemgetter(1))
+
+print('Dictionary in ascending order by value : ', sorted_d)
+
+sorted_d = dict(sorted(d.items(), key=operator.itemgetter(1), reverse=True))
+
+print('Dictionary in descending order by value : ', sorted_d)
