@@ -1,0 +1,69 @@
+Week11 # Task 1
+# Write a program that accepts two lists and outputs all the elements of the first one that are not in the second one.
+#def find_unique_elements(list1, list2):
+#    unique_elements = [item for item in list1 if item not in list2]
+#    return unique_elements
+
+#list1 = [1, 2, 3, 4, 5]
+#list2 = [4, 5, 6, 7, 8]
+
+#result = find_unique_elements(list1, list2)
+#print("Элементы первого списка, которых нет во втором:", result)
+
+# Task 2
+# Print a list of files in the specified directory.
+#import os
+
+#directory = input("Введите путь к каталогу: ")
+
+#try:
+#    files = os.listdir(directory)
+#    print("Список файлов:")
+#    for file in files:
+#        print(file)
+#except Exception as e:
+#    print(f"Ошибка: {e}")
+
+# Task 3
+# Add up the digits of an integer.
+#def sum_of_digits(number):
+#    return sum(int(digit) for digit in str(abs(number)))
+
+#num = int(input("Введите целое число: "))
+#result = sum_of_digits(num)
+#print(f"Сумма цифр числа {num}: {result}")
+
+# Task 4
+# Count the number of times a character occurs in a string.
+#def count_character(string, char):
+#    return string.count(char)
+
+#string = input("Введите строку: ")
+#char = input("Введите символ для подсчёта: ")
+
+#count = count_character(string, char)
+#print(f"Символ '{char}' встречается в строке {count} раз(а).")
+
+# Task 5
+# Swap the values of the variables.
+#a = 843
+#b = 348
+
+#a, b = b, a
+
+#print("a =", a)
+#print("b =", b)
+# Task 6
+# Use the anonymous function to extract numbers divisible by 15 from the list.
+#numbers = [10, 15, 30, 45, 23, 50, 60, 75, 90]
+
+#multiples_of_15 = list(filter(lambda x: x % 15 == 0, numbers))
+
+#print(multiples_of_15)
+# Task 7
+# You need to check if all the numbers in the sequence are unique.
+#numbers = [1, 2, 3, 4, 5, 6]
+
+#unique = len(numbers) == len(set(numbers))
+
+#print(unique)
